@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const LinkBanner = () => {
   return (
     <section className="h-[300px] bg-stone-100">
@@ -8,17 +10,51 @@ const LinkBanner = () => {
         </h2>
         <div className="gap-30 flex gap-24 text-2xs">
           {/* 중복 코드 제거가 필요 */}
-          <div className="rounded-md bg-[#2ecc71] px-[20px] py-[10px] text-white transition delay-150 ease-in-out hover:-translate-y-2 hover:shadow-xl">
+          <div className="flex gap-2 rounded-md bg-[#2ecc71] px-[20px] py-[10px] text-white transition delay-100 ease-in-out hover:-translate-y-2 hover:shadow-xl">
+            <Image
+              className="blue mt-[1px]"
+              src="/icons/github-icon.svg"
+              width={30}
+              height={30}
+              alt="깃헙아이콘"
+              style={{ width: '20px', height: '20px' }}
+            />
             <a href="https://github.com/WooDaeHyun">Github</a>
           </div>
-          <div className="rounded-md bg-[#ff7979] px-[20px] py-[10px] text-white transition delay-150 ease-in-out hover:-translate-y-2 hover:shadow-xl">
+          <div className="flex gap-2 rounded-md bg-[#ff7979] px-[20px] py-[10px] text-white transition delay-100 ease-in-out hover:-translate-y-2 hover:shadow-xl">
+            <Image
+              className="blue mt-[1.5px]"
+              src="/icons/code-solid.svg"
+              width={30}
+              height={30}
+              alt="깃헙아이콘"
+              style={{ width: '20px', height: '20px' }}
+            />
             <a href="https://woodaelog.com/">Dev Blog</a>
           </div>
-          <div className="rounded-md bg-[#ffbe76] px-[20px] py-[10px] text-white transition delay-150 ease-in-out hover:-translate-y-2 hover:shadow-xl">
+          <div className="flex gap-2 rounded-md bg-[#ffbe76] px-[20px] py-[10px] text-white transition delay-100 ease-in-out hover:-translate-y-2 hover:shadow-xl">
+            <Image
+              className="blue mt-[1.5px]"
+              src="/icons/tistory.svg"
+              width={30}
+              height={30}
+              alt="깃헙아이콘"
+              style={{ width: '20px', height: '20px' }}
+            />
             <a href="https://pinetree93.tistory.com/">Tistory</a>
           </div>
         </div>
-        <div className="text-2xs font-bold">E-MAIL : po668312@naver.com</div>
+        <div className="flex gap-2 text-2xs font-bold">
+          <Image
+            className="blue mt-[1.5px]"
+            src="/icons/email.svg"
+            width={30}
+            height={30}
+            alt="깃헙아이콘"
+            style={{ width: '20px', height: '20px' }}
+          />
+          po668312@naver.com
+        </div>
       </div>
     </section>
   );

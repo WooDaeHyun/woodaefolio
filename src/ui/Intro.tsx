@@ -1,3 +1,4 @@
+import Image from 'next/image';
 const Intro = () => {
   return (
     <section>
@@ -22,9 +23,20 @@ const Intro = () => {
           </div>
         </nav>
       </header>
-      <main className="intro flex h-screen items-center justify-center bg-gradient-to-b from-gray-500 to-neutral-400 bg-cover bg-center bg-no-repeat">
+      <main className="intro flex h-screen items-center justify-center bg-gradient-to-b from-gray-800 to-neutral-600 bg-cover bg-center bg-no-repeat">
         <div className="heading w-[1300px] text-center text-white">
-          <h1 className="mb-5 text-[50px] font-bold">WOODAEHYUN PORTFOLIO</h1>
+          <div className="w-[100%] text-center">
+            <Image
+              src="/icons/bulb2.svg"
+              className="mb-20 inline-block h-6 w-6 animate-bounce"
+              width={100}
+              height={100}
+              style={{ width: '80px', height: '80px' }}
+              alt="test"
+            />
+          </div>
+
+          <h1 className="mb-5 text-[50px] font-bold">WOODAEHYUN PORTFOLIO </h1>
           <p className="text-[20px] font-thin leading-6">
             생각하는 개발자 우대현의 포트폴리오 입니다.
           </p>
