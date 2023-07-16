@@ -15,7 +15,8 @@ module.exports = {
         md: '1.6rem',
         lg: '1.8rem',
         xl: '2.0rem',
-        '2xl': '2.2rem'
+        '2xl': '2.2rem',
+        '3xl': '2.6rem'
       },
       fontWeight: {
         thin: 100,
@@ -24,6 +25,9 @@ module.exports = {
       },
       fontFamily: {
         lineseed: ['var(--font-lineseed)']
+      },
+      backgroundImage: {
+        intro: "url('/images/intro.png')"
       }
     }
   },

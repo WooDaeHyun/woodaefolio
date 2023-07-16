@@ -12,8 +12,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="ko">
-      <body className="app-layout">
-        <main className={`${LineSeedKR.variable} font-lineseed `}>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
+      <body>
+        <main className={`${LineSeedKR.variable} app-layout font-lineseed`}>
           {children}
         </main>
       </body>

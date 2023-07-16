@@ -26,7 +26,16 @@
     background-color: #fcfcfc;
     font-family: LineSeedKR;
   }
+
+  body {
+    font-size: 15px;
+    margin: 0;
+    color: #222;
+    line-height: 1.5rem;
+  }
+
   .app-layout {
-    max-width: 43rem;
+    width: 100%;
+    margin: auto;
   }
 }

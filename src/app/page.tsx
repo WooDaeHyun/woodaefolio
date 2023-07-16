@@ -1,12 +1,11 @@
 import Image from 'next/image';
 
-import TopNavigation from '@/ui/TopNavigation';
+import Intro from '@/ui/Intro/Intro';
 
 export default function Home() {
   return (
     <main>
-      <TopNavigation />
-      WOODAE FOLIO!!
+      <Intro />
     </main>
   );
 }
