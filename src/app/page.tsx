@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 import Intro from '@/ui/Intro';
 import About from '@/ui/About';
 
