@@ -35,10 +35,12 @@ const Intro = () => {
               alt="test"
             />
           </div>
-
-          <h1 className="mb-5 text-[50px] font-bold">WOODAEHYUN PORTFOLIO </h1>
+          <h1 className="mb-[30px] text-[50px] font-bold">
+            WOODAEHYUN PORTFOLIO{' '}
+          </h1>
           <p className="text-[20px] font-thin leading-6">
-            생각하는 개발자 우대현의 포트폴리오 입니다.
+            보다 편리한 미래를 만들기 위해 노력하는 개발자 우대현의 포트폴리오
+            입니다.
           </p>
         </div>
       </main>
