@@ -27,13 +27,8 @@ const Intro = () => {
       <main className="intro flex h-screen items-center justify-center bg-intro bg-cover bg-center bg-no-repeat">
         <div className="heading w-[1300px] text-center text-white">
           <h1 className="mb-5 text-3xl font-bold">WOODAEHYUN PORTFOLIO</h1>
-          <p className="font-thin leading-6">
-            생각하는 개발자 우대현의 포트폴리오 입니다. 생각하는 개발자 우대현의
-            포트폴리오 입니다. 생각하는 개발자 우대현의 포트폴리오 입니다.
-            생각하는 개발자 우대현의 포트폴리오 입니다. 생각하는 개발자 우대현의
-            포트폴리오 입니다. 생각하는 개발자 우대현의 포트폴리오 입니다.
-            생각하는 개발자 우대현의 포트폴리오 입니다. 생각하는 개발자 우대현의
-            포트폴리오 입니다. 생각하는 개발자 우대현의 포트폴리오 입니다.
+          <p className="text-2xs font-thin leading-6">
+            생각하는 개발자 우대현의 포트폴리오 입니다.
           </p>
         </div>
       </main>
