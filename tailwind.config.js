@@ -27,7 +27,7 @@ module.exports = {
         lineseed: ['var(--font-lineseed)']
       },
       backgroundImage: {
-        intro: "url('/images/intro.png')"
+        intro: "url('/images/main.png')"
       }
     }
   },
