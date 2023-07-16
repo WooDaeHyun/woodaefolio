@@ -39,7 +39,8 @@ const Intro = () => {
             WOODAEHYUN PORTFOLIO{' '}
           </h1>
           <p className="text-[20px] font-thin leading-6">
-            보다 편리한 미래를 만들기 위해 노력하는 개발자 우대현의 포트폴리오
+            보다 편리한 미래를 만들기 위해 노력하는{' '}
+            <span className="font-regular">{"'프론트엔드 개발자'"}</span> 우대현
             입니다.
           </p>
         </div>
