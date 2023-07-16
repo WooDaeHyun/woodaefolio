@@ -22,7 +22,7 @@ const Intro = () => {
           </div>
         </nav>
       </header>
-      <main className="intro flex h-screen items-center justify-center bg-gradient-to-b bg-intro from-gray-500 to-neutral-400 bg-cover bg-center bg-no-repeat">
+      <main className="intro flex h-screen items-center justify-center bg-gradient-to-b from-gray-500 to-neutral-400 bg-cover bg-center bg-no-repeat">
         <div className="heading w-[1300px] text-center text-white">
           <h1 className="mb-5 text-[50px] font-bold">WOODAEHYUN PORTFOLIO</h1>
           <p className="text-[20px] font-thin leading-6">
