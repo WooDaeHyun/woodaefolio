@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import bulb from '/public/icons/bulb.svg';
+
 const Intro = () => {
   return (
     <section>
@@ -27,7 +29,7 @@ const Intro = () => {
         <div className="heading w-[1300px] text-center text-white">
           <div className="w-[100%] text-center">
             <Image
-              src="/icons/bulb2.svg"
+              src={bulb}
               className="mb-20 inline-block h-6 w-6 animate-bounce"
               width={100}
               height={100}

@@ -1,4 +1,8 @@
 import Image from 'next/image';
+import githubLogo from '/public/icons/githubLogo.svg';
+import codeSolid from '/public/icons/codeSolid.svg';
+import tistoryLogo from '/public/icons/tistoryLogo.svg';
+import email from '/public/icons/email.svg';
 
 const LinkBanner = () => {
   return (
@@ -13,10 +17,10 @@ const LinkBanner = () => {
           <div className="flex gap-2 rounded-md bg-[#0A66C2] px-[20px] py-[10px] text-white transition delay-100 ease-in-out hover:-translate-y-2 hover:shadow-xl">
             <Image
               className="mt-[1.5px]"
-              src="/icons/github-icon.svg"
-              width={30}
-              height={30}
-              alt="깃헙아이콘"
+              src={githubLogo}
+              width={20}
+              height={20}
+              alt="githubLogo"
               style={{ width: '20px', height: '20px' }}
             />
             <a href="https://github.com/WooDaeHyun">Github</a>
@@ -24,10 +28,10 @@ const LinkBanner = () => {
           <div className="flex gap-2 rounded-md bg-[#ff7979] px-[20px] py-[10px] text-white transition delay-100 ease-in-out hover:-translate-y-2 hover:shadow-xl">
             <Image
               className="mt-[1.5px]"
-              src="/icons/code-solid.svg"
-              width={30}
-              height={30}
-              alt="깃헙아이콘"
+              src={codeSolid}
+              width={20}
+              height={20}
+              alt="codeSolidIcon"
               style={{ width: '20px', height: '20px' }}
             />
             <a href="https://woodaelog.com/">Dev Blog</a>
@@ -35,10 +39,10 @@ const LinkBanner = () => {
           <div className="flex gap-2 rounded-md bg-[#ffbe76] px-[20px] py-[10px] text-white transition delay-100 ease-in-out hover:-translate-y-2 hover:shadow-xl">
             <Image
               className="mt-[1.5px]"
-              src="/icons/tistory.svg"
-              width={30}
-              height={30}
-              alt="깃헙아이콘"
+              src={tistoryLogo}
+              width={20}
+              height={20}
+              alt="tistoryLogo"
               style={{ width: '20px', height: '20px' }}
             />
             <a href="https://pinetree93.tistory.com/">Tistory</a>
@@ -47,10 +51,10 @@ const LinkBanner = () => {
         <div className="flex gap-2 text-2xs font-bold">
           <Image
             className="mt-[1.5px]"
-            src="/icons/email.svg"
-            width={30}
-            height={30}
-            alt="깃헙아이콘"
+            src={email}
+            width={20}
+            height={20}
+            alt="emailIcon"
             style={{ width: '20px', height: '20px' }}
           />
           po668312@naver.com
