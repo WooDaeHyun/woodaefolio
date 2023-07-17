@@ -23,6 +23,20 @@ module.exports = {
         regular: 400,
         bold: 700
       },
+      colors: {
+        link: '#c25a3a',
+        edge: { bgColor: '#2d3436', fontColor: '#9ca3af' },
+        badge: {
+          github: '#0A66C2',
+          devBlog: '#ff7979',
+          tistory: '#ffbe76',
+          complete: '#60a5fa',
+          progress: '#f87171'
+        },
+        banner: {
+          bgColor: '#f5f5f4'
+        }
+      },
       fontFamily: {
         lineseed: ['var(--font-lineseed)']
       },

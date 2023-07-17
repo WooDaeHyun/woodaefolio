@@ -24,7 +24,7 @@ const About = () => {
           </p>
           <a
             href="https://woodaelog.com/about/"
-            className="text-xs text-[#c25a3a] hover:underline"
+            className="text-xs text-link hover:underline"
           >
             WHY DEV?
           </a>

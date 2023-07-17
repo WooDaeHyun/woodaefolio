@@ -5,7 +5,7 @@ const Intro = () => {
   return (
     <section>
       <header className="fixed w-[100%]">
-        <div className="banner flex h-9 items-center bg-black font-thin text-white">
+        <div className="banner flex h-9 items-center bg-edge-bgColor font-thin text-edge-fontColor">
           <p className="m-auto w-[1300px] text-end text-[#bbb]">
             Portfolio <em>made by</em> WooDaeHyun
           </p>
