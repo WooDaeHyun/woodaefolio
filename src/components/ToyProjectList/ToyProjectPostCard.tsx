@@ -28,12 +28,15 @@ const ToyProjectPostCard = ({
   return (
     <div className="flex w-[370px] flex-col justify-center gap-1">
       <div className="chat chat-start">
-        <div className=" chat-bubble bg-[#55efc4] text-black">{title}</div>
+        <div className=" chat-bubble bg-[#55efc4] text-banner-fontColor">
+          {title}
+        </div>
       </div>
       <div className="chat chat-start">
         <div className="chat-bubble bg-[#dfe6e9]">
           <div>
             <Image
+              priority
               className="m-auto w-[100%]"
               src={`/images/${imageSubject}.svg`}
               width={50}
@@ -56,7 +59,9 @@ const ToyProjectPostCard = ({
         </div>
       </div>
       <div className="chat chat-start">
-        <div className="chat-bubble bg-[#fab1a0] text-black">{endMessage}</div>
+        <div className="chat-bubble bg-[#fab1a0] text-banner-fontColor">
+          {endMessage}
+        </div>
       </div>
     </div>
   );
