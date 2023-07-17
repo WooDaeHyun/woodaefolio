@@ -14,7 +14,7 @@ const Intro = () => {
           <div className="m-auto flex w-[1300px] items-center justify-between">
             <div className="logo">{/* logo 넣어야함 */}</div>
             <ul className="gnb font-xs mt-8 flex gap-8 text-2xs text-white">
-              {['HOME', 'ABOUT', 'PROJECT', 'LIKES', 'BLOG'].map(
+              {['HOME', 'ABOUT', 'PROJECT', 'PROJECT-DOCS', 'TOY-PROJECT'].map(
                 (value, index) => (
                   <li className="hover:text-[#333]" key={index}>
                     <a href="#none">{value}</a>
