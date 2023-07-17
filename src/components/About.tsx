@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import myProfile from '/public/images/myProfile.png';
 
 const About = () => {
   return (
@@ -32,7 +33,7 @@ const About = () => {
       <div className="h-[100%] w-[100%] flex-[2_0_0%]">
         <Image
           className="rounded-b-[45%] rounded-l-[75%] rounded-r-[95%] rounded-t-[90%]"
-          src="/images/myProfile.png"
+          src={myProfile}
           alt="프로필 이미지"
           width={350}
           height={200}

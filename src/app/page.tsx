@@ -1,7 +1,8 @@
-import Intro from '@/ui/Intro';
-import About from '@/ui/About';
-import LinkBanner from '@/ui/LinkBanner';
-import Footer from '@/ui/Footer';
+import Intro from '@/components/Intro';
+import About from '@/components/About';
+import LinkBanner from '@/components/LinkBanner';
+import Footer from '@/components/Footer';
+import ProjectList from '@/components/ProjectList/ProjectList';
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Intro />
       <About />
       <LinkBanner />
+      <ProjectList />
       <Footer />
     </main>
   );
