@@ -23,6 +23,7 @@ const ProjectList = () => {
               imageSubject={imageSubject}
               serviceUrl={serviceUrl}
               isProceeding={isProceeding}
+              id={id}
             />
           );
         })}

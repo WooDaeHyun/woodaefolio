@@ -7,6 +7,7 @@ interface ProjectPostCardProps {
   imageSubject: string;
   serviceUrl: string;
   isProceeding: boolean;
+  id: string;
 }
 
 const selectBadgeStype = (isProceeding: boolean) => {
@@ -24,13 +25,17 @@ const ProjectPostCard = ({
   description,
   imageSubject,
   serviceUrl,
-  isProceeding
+  isProceeding,
+  id
 }: ProjectPostCardProps) => {
   const badgeStyle = selectBadgeStype(isProceeding);
 
   return (
     <>
-      <div className=" mt-[55px] h-[540px] w-[390px] rounded-br-[30px] bg-zinc-50 shadow-md">
+      <div
+        id={id}
+        className=" mt-[55px] h-[540px] w-[390px] rounded-br-[30px] bg-zinc-50 shadow-md"
+      >
         <div className="h-[220px] w-[390px]">
           <Image
             src={`/images/${imageSubject}.png`}
@@ -55,7 +60,7 @@ const ProjectPostCard = ({
               width={15}
               height={20}
               alt="화살표이미지"
-              style={{ width: '30px', height: '20px' }}
+              style={{ width: '30px', height: 'auto' }}
             />
           </a>
         </div>

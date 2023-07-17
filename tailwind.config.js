@@ -1,7 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './node_modules/flowbite-react/**/*.js',
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
@@ -35,7 +34,8 @@ module.exports = {
           progress: '#f87171'
         },
         banner: {
-          bgColor: '#f5f5f4'
+          bgColor: '#f5f5f4',
+          fontColor: '#535c68'
         }
       },
       fontFamily: {
@@ -46,5 +46,5 @@ module.exports = {
       }
     }
   },
-  plugins: [require('flowbite/plugin')]
+  plugins: [require('daisyui')]
 };

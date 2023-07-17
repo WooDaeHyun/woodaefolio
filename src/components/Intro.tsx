@@ -5,14 +5,14 @@ const Intro = () => {
   return (
     <section>
       <header className="fixed w-[100%]">
-        <div className="banner flex h-9 items-center bg-edge-bgColor font-thin text-edge-fontColor">
+        <div className="flex h-9 items-center bg-edge-bgColor font-thin text-edge-fontColor">
           <p className="m-auto w-[1300px] text-end text-[#bbb]">
             Portfolio <em>made by</em> WooDaeHyun
           </p>
         </div>
         <nav>
           <div className="m-auto flex w-[1300px] items-center justify-between">
-            <div className="logo">{/* logo 넣어야함 */}</div>
+            <div className="logo">{/* logo 자리 */}</div>
             <ul className="gnb font-xs mt-8 flex gap-8 text-2xs text-white">
               {['HOME', 'ABOUT', 'PROJECT', 'PROJECT-DOCS', 'TOY-PROJECT'].map(
                 (value, index) => (
@@ -25,7 +25,7 @@ const Intro = () => {
           </div>
         </nav>
       </header>
-      <main className="intro flex h-screen items-center justify-center bg-gradient-to-b from-gray-800 to-neutral-600 bg-cover bg-center bg-no-repeat">
+      <main className="intro flex h-screen items-center justify-center bg-gradient-to-b from-gray-800 to-neutral-600">
         <div className="heading w-[1300px] text-center text-white">
           <div className="w-[100%] text-center">
             <Image

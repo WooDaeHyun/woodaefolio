@@ -8,7 +8,7 @@ const LinkBanner = () => {
   return (
     <section className=" bg-banner-bgColor">
       <div className="gap-15 flex h-[100%] flex-col items-center justify-center gap-16 py-[30px]">
-        <h2 className="font-md text-md text-[#535c68]">
+        <h2 className="font-md text-md text-banner-fontColor">
           저의 <span className="font-bold text-black">CHANNEL</span>들을
           소개합니다.
         </h2>
