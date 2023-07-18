@@ -6,7 +6,7 @@ const Bottom = () => {
       <div className="flex h-[100%] flex-col items-center justify-center gap-5">
         <h1 className="text-[30px]">
           지금까지 꾸준히 노력하는 개발자
-          <span className="text-bold">'우대현'</span>이었습니다.
+          <span className="text-bold">우대현</span>이었습니다.
         </h1>
         <p className="text-[25px]">감사합니다.</p>
         <Image
