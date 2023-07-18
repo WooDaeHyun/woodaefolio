@@ -22,8 +22,8 @@ const Intro = () => {
   }, [position]);
 
   const navigationStyle = change
-    ? 'gnb font-xs my-[25px] flex gap-8 text-2xs transition delay-75'
-    : 'gnb font-xs my-[25px] flex gap-8 text-2xs text-white transition delay-75';
+    ? 'font-xs my-[25px] flex gap-8 text-2xs transition delay-75'
+    : 'font-xs my-[25px] flex gap-8 text-2xs text-white transition delay-75';
 
   const headerWrapperStyle = change ? 'bg-white shadow-lg transition' : '';
 
@@ -32,7 +32,7 @@ const Intro = () => {
     : 'flex h-9 items-center bg-edge-bgColor font-thin text-edge-fontColor';
 
   const moveTopStyle = change
-    ? 'fixed bottom-1 right-1 h-[40px] w-[40px] rounded-full bg-[#0c2461] m-[20px] text-center animate-bounce font-bold pt-[7px] text-white'
+    ? 'fixed bottom-1 right-1 h-[40px] w-[40px] rounded-full bg-[#0c2461] m-[20px] text-center animate-bounce font-bold pt-[7px] text-white transition delay-200'
     : 'hidden';
 
   const animationStyle = change
