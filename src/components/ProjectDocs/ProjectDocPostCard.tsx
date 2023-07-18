@@ -24,8 +24,8 @@ const ProjectDocPostCard = ({
         <span className="text-black">&nbsp;{projectName}</span>
       </h1>
       <div>
-        <div className="rounded-md bg-banner-bgColor">
-          <div className="flex gap-2 py-[5px]">
+        <div className="rounded-md bg-banner-bgColor p-[15px] shadow-md">
+          <div className="flex gap-2">
             <Image
               className="mt-[1.5px]"
               src={githubLogo}

@@ -40,7 +40,7 @@ const Intro = () => {
     : 'mb-20 inline-block h-6 w-6 animate-bounce';
 
   return (
-    <section className="relative z-[100]">
+    <section id="HOME" className="relative z-[100]">
       <header className="fixed w-[100%]">
         <div className={topBannerStyle}>
           <p className="m-auto w-[1300px] text-end text-[#bbb]">
@@ -54,7 +54,7 @@ const Intro = () => {
               {['HOME', 'ABOUT', 'PROJECT', 'PROJECT-DOCS', 'TOY-PROJECT'].map(
                 (value, index) => (
                   <li className="hover:text-gray-400" key={index}>
-                    <a href="#none">{value}</a>
+                    <a href={`#${value}`}>{value}</a>
                   </li>
                 )
               )}
@@ -77,7 +77,7 @@ const Intro = () => {
           <h1 className="mb-[30px] text-[50px] font-bold">
             WOODAEHYUN PORTFOLIO{' '}
           </h1>
-          <p className="text-[20px] font-thin leading-6">
+          <p id="#ABOUT" className="text-[20px] font-thin leading-6">
             보다 편리한 미래를 만들기 위해 노력하는{' '}
             <span className="font-regular">{"'프론트엔드 개발자'"}</span> 우대현
             입니다.

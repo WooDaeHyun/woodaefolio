@@ -3,7 +3,7 @@ import { projectListInfo } from '@/data/projectListInfo';
 
 const ProjectList = () => {
   return (
-    <section className="text m-auto max-w-[1300px] py-[130px]">
+    <section id="PROJECT" className="text m-auto max-w-[1300px] py-[130px]">
       <h1 className="text-lg font-bold">My Project</h1>
       <div className="flex flex-wrap justify-between">
         {projectListInfo.map(value => {

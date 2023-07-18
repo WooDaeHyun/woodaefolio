@@ -3,7 +3,7 @@ import { projectDocsInfo } from '@/data/projectDocsInfo';
 
 const ProjectDocs = () => {
   return (
-    <section>
+    <section id="PROJECT-DOCS">
       <div className="m-auto h-[100%] max-w-[1300px]">
         <h1 className="text-lg font-bold">My Project Docs</h1>
         {projectDocsInfo.map(value => {

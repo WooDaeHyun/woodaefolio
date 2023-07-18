@@ -3,10 +3,10 @@ import myProfile from '/public/images/myProfile.png';
 
 const About = () => {
   return (
-    <section className="m-auto flex w-[1300px] gap-11 py-[130px]">
+    <section id="ABOUT" className="m-auto flex w-[1300px] gap-11 py-[130px]">
       <div className="h-[100%] flex-[9_0_0%]">
-        <div className="flex flex-col items-center justify-center gap-5">
-          <h2 className="text-lg font-bold">About Me</h2>
+        <div className="flex flex-col items-start justify-center gap-5">
+          <h2 className="mb-[30px] text-lg font-bold">About Me</h2>
           <p className="text-2xs font-thin leading-7">
             &nbsp;&nbsp;개발자로서 저의 가장 큰 꿈은 제가 느꼈던 소소해 보일 수
             있지만 신기하면서도 편리헸던 UI적 경험을 남들에게도 전해주는
@@ -26,7 +26,7 @@ const About = () => {
             href="https://woodaelog.com/about/"
             className="text-xs text-link hover:underline"
           >
-            WHY DEV?
+            &nbsp;WHY DEV?
           </a>
         </div>
       </div>
