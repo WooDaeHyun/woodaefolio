@@ -54,7 +54,7 @@ const ToyProjectPostCard = ({
           </a>
           <br />
           <a href={serviceUrl} className="hover:underline">
-            Project 구경 하기 🐱
+            Project 구경하기 🐱
           </a>
         </div>
       </div>

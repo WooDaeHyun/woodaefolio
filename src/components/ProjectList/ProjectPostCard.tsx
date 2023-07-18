@@ -53,7 +53,7 @@ const ProjectPostCard = ({
             href={serviceUrl}
             className="group mt-5 flex w-[140px] font-thin text-link"
           >
-            서비스 바로 가기
+            서비스 바로가기
             <Image
               className="m-[2.5px_0_0_5px] transition delay-75 ease-in-out group-hover:translate-x-3"
               src={arrowRight}

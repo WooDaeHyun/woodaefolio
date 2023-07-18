@@ -1,10 +1,10 @@
 import Intro from '@/components/Intro';
 import About from '@/components/About';
 import LinkBanner from '@/components/LinkBanner';
-import Footer from '@/components/Footer';
 import ProjectList from '@/components/ProjectList/ProjectList';
-import Test from '@/components/test';
+import ProjectDocs from '@/components/ProjectDocs/ProjectDocs';
 import ToyProjectList from '@/components/ToyProjectList/ToyProjectList';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -13,6 +13,7 @@ export default function Home() {
       <About />
       <LinkBanner />
       <ProjectList />
+      <ProjectDocs />
       <ToyProjectList />
       <Footer />
     </main>
