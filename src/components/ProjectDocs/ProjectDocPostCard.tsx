@@ -25,9 +25,9 @@ const ProjectDocPostCard = ({
       </h1>
       <div>
         <div className="rounded-md bg-banner-bgColor p-[15px] shadow-md">
-          <div className="flex gap-2">
+          <div className="flex gap-2 hover:underline">
             <Image
-              className="mt-[1.5px]"
+              className="mt-[2.5px]"
               src={githubLogo}
               width={20}
               height={20}

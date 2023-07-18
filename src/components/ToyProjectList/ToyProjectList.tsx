@@ -24,17 +24,15 @@ const ToyProjectList = () => {
               endMessage
             } = value;
             return (
-              <div key={id}>
-                <div id={id} className="carousel-item flex">
-                  <ToyProjectPostCard
-                    title={title}
-                    imageSubject={imageSubject}
-                    githubUrl={githubUrl}
-                    serviceUrl={serviceUrl}
-                    isPublic={isPublic}
-                    endMessage={endMessage}
-                  />
-                </div>
+              <div key={id} id={id} className="carousel-item flex">
+                <ToyProjectPostCard
+                  title={title}
+                  imageSubject={imageSubject}
+                  githubUrl={githubUrl}
+                  serviceUrl={serviceUrl}
+                  isPublic={isPublic}
+                  endMessage={endMessage}
+                />
               </div>
             );
           })}
