@@ -19,7 +19,7 @@ const ProjectDocPostCard = ({
 }: ProjectDocPostCardProps) => {
   return (
     <div className="mt-[30px] flex flex-col gap-5 border-b-[2px] border-edge-fontColor py-[25px]">
-      <h1 className="mb-[15px] text-lg text-banner-fontColor">
+      <h1 className="mb-[15px] text-lg text-banner-fontColor max-[768px]:leading-10">
         {postTitle}
         <span className="text-black">&nbsp;{projectName}</span>
       </h1>

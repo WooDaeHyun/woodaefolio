@@ -4,7 +4,7 @@ const Bottom = () => {
   return (
     <section className="h-[450px] bg-gradient-to-b from-neutral-600 to-gray-800 text-center text-white">
       <div className="flex h-[100%] flex-col items-center justify-center gap-5">
-        <h1 className="text-[30px]">
+        <h1 className="text-[30px] max-[768px]:leading-10">
           지금까지 꾸준히 노력하는 개발자
           <span className="text-bold">{' 우대현'}</span>이었습니다.
         </h1>

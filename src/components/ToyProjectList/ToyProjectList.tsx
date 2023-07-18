@@ -7,7 +7,7 @@ const ToyProjectList = () => {
       id="TOY-PROJECT"
       className=" mt-[130px] h-[100%] bg-banner-bgColor py-[80px]"
     >
-      <div className="pb-[40px] text-center text-lg font-bold text-banner-fontColor">
+      <div className="pb-[40px] text-center text-lg font-bold text-banner-fontColor max-[768px]:leading-10">
         저의 소소하지만 소중한 <span className="text-black">Toy Project들</span>{' '}
         입니다.
       </div>

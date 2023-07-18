@@ -22,8 +22,8 @@ const Intro = () => {
   }, [position]);
 
   const navigationStyle = change
-    ? 'font-xs my-[25px] flex gap-8 text-2xs transition delay-75'
-    : 'font-xs my-[25px] flex gap-8 text-2xs text-white transition delay-75';
+    ? 'font-xs my-[25px] flex gap-8 text-2xs transition delay-75 max-[768px]:hidden'
+    : 'font-xs my-[25px] flex gap-8 text-2xs text-white transition delay-75 max-[768px]:hidden';
 
   const headerWrapperStyle = change ? 'bg-white shadow-lg transition' : '';
 
@@ -41,14 +41,14 @@ const Intro = () => {
 
   return (
     <section id="HOME" className="relative z-[100]">
-      <header className="fixed w-[100%]">
+      <header className="fixed w-full">
         <div className={topBannerStyle}>
-          <p className="m-auto w-[1300px] text-end text-[#bbb]">
+          <p className="m-auto max-w-[1300px] text-end text-[#bbb]">
             Portfolio <em>made by</em> WooDaeHyun
           </p>
         </div>
         <nav className={headerWrapperStyle}>
-          <div className="m-auto flex w-[1300px] justify-between">
+          <div className="m-auto flex max-w-[1300px] justify-between">
             <div className="logo">{/* logo 자리 */}</div>
             <ul id="navigation" className={navigationStyle}>
               {['HOME', 'ABOUT', 'PROJECT', 'PROJECT-DOCS', 'TOY-PROJECT'].map(
@@ -63,7 +63,7 @@ const Intro = () => {
         </nav>
       </header>
       <main className="intro flex h-screen items-center justify-center bg-gradient-to-b from-gray-800 to-neutral-600">
-        <div className="heading w-[1300px] text-center text-white">
+        <div className="heading max-w-[1300px] text-center text-white">
           <div className="w-[100%] text-center">
             <Image
               src={bulb}
@@ -74,10 +74,13 @@ const Intro = () => {
               alt="test"
             />
           </div>
-          <h1 className="mb-[30px] text-[50px] font-bold">
+          <h1 className="mb-[30px] text-[50px] font-bold max-[768px]:leading-10">
             WOODAEHYUN PORTFOLIO{' '}
           </h1>
-          <p id="#ABOUT" className="text-[20px] font-thin leading-6">
+          <p
+            id="#ABOUT"
+            className="text-[20px] font-thin leading-6 max-[768px]:px-10"
+          >
             보다 편리한 미래를 만들기 위해 노력하는{' '}
             <span className="font-regular">{"'프론트엔드 개발자'"}</span> 우대현
             입니다.

@@ -3,7 +3,10 @@ import myProfile from '/public/images/myProfile.png';
 
 const About = () => {
   return (
-    <section id="ABOUT" className="m-auto flex w-[1300px] gap-11 py-[130px]">
+    <section
+      id="ABOUT"
+      className="m-auto flex max-w-[1300px] gap-11 py-[130px] max-[768px]:flex-col max-[768px]:px-5 max-[768px]:py-[50px]"
+    >
       <div className="h-[100%] flex-[9_0_0%]">
         <div className="flex flex-col items-start justify-center gap-5">
           <h2 className="mb-[30px] text-lg font-bold">About Me</h2>
