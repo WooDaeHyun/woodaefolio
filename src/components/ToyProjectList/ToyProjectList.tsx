@@ -21,7 +21,7 @@ const ToyProjectList = () => {
               endMessage
             } = value;
             return (
-              <div>
+              <div key={id}>
                 <div id={id} className="carousel-item flex">
                   <ToyProjectPostCard
                     title={title}
@@ -40,7 +40,11 @@ const ToyProjectList = () => {
           {toyProjectListInfo.map((value, index) => {
             const { id } = value;
             return (
-              <a href={`#${id}`} className="btn btn-xs rounded-full bg-white">
+              <a
+                key={id + index}
+                href={`#${id}`}
+                className="btn btn-xs rounded-full bg-white"
+              >
                 {index + 1}
               </a>
             );
