@@ -1,22 +1,51 @@
+'use client';
+
 import Image from 'next/image';
 import bulb from '/public/icons/bulb.svg';
 
+import { useEffect, useState, useCallback } from 'react';
+
 const Intro = () => {
+  const [position, setPosition] = useState(5);
+  const [change, setChange] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [position]);
+
+  const handleScroll = useCallback(() => {
+    const moving = window.scrollY;
+    setChange(position < moving);
+  }, [position]);
+
+  const navigationStyle = change
+    ? 'gnb font-xs my-[25px] flex gap-8 text-2xs'
+    : 'gnb font-xs my-[25px] flex gap-8 text-2xs text-white';
+
+  const headerWrapperStyle = change ? 'bg-white shadow-lg' : '';
+
+  const topBannerStyle = change
+    ? 'hidden'
+    : 'flex h-9 items-center bg-edge-bgColor font-thin text-edge-fontColor';
+
   return (
-    <section>
+    <section className="relative z-[100]">
       <header className="fixed w-[100%]">
-        <div className="flex h-9 items-center bg-edge-bgColor font-thin text-edge-fontColor">
+        <div className={topBannerStyle}>
           <p className="m-auto w-[1300px] text-end text-[#bbb]">
             Portfolio <em>made by</em> WooDaeHyun
           </p>
         </div>
-        <nav>
-          <div className="m-auto flex w-[1300px] items-center justify-between">
+        <nav className={headerWrapperStyle}>
+          <div className="m-auto flex w-[1300px] justify-between">
             <div className="logo">{/* logo 자리 */}</div>
-            <ul className="gnb font-xs mt-8 flex gap-8 text-2xs text-white">
+            <ul id="navigation" className={navigationStyle}>
               {['HOME', 'ABOUT', 'PROJECT', 'PROJECT-DOCS', 'TOY-PROJECT'].map(
                 (value, index) => (
-                  <li className="hover:text-[#333]" key={index}>
+                  <li className="hover:text-gray-400" key={index}>
                     <a href="#none">{value}</a>
                   </li>
                 )
