@@ -3,7 +3,7 @@ import { toyProjectListInfo } from '@/data/toyProjectListInfo';
 
 const ToyProjectList = () => {
   return (
-    <section className=" mt-[130px] h-[100%] bg-banner-bgColor py-[40px]">
+    <section className=" mt-[130px] h-[100%] bg-banner-bgColor py-[80px]">
       <div className="pb-[40px] text-center text-lg font-bold text-banner-fontColor">
         저의 소소하지만 소중한 <span className="text-black">Toy Project들</span>{' '}
         입니다.
