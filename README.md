@@ -11,7 +11,11 @@
   <h3><a href="https://woodaefolio.com">🚀 WOODAEFOLIO 바로 가기</a></h3>
   <div>배포주소 : ( https://woodaefolio.com )</div>
 </div>
+<br/>
 
+```javascript
+실행 명령어 `npm run dev`
+```
 
 ## 2. 사용 기술
 
