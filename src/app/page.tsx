@@ -3,9 +3,15 @@ import About from '@/components/About/About';
 import LinkBanner from '@/components/LinkBanner/LinkBanner';
 import ProjectList from '@/components/ProjectList/ProjectList';
 import ProjectDocs from '@/components/ProjectDocs/ProjectDocs';
-import ToyProjectList from '@/components/ToyProjectList/ToyProjectList';
 import Bottom from '@/components/Bottom/Bottom';
 import Footer from '@/components/Footer/Footer';
+
+import dynamic from 'next/dynamic';
+
+const ToyProjectListDy = dynamic(
+  () => import('../components/ToyProjectList/ToyProjectList'),
+  { ssr: false }
+);
 
 export default function Home() {
   return (
@@ -15,7 +21,7 @@ export default function Home() {
       <LinkBanner />
       <ProjectList />
       <ProjectDocs />
-      <ToyProjectList />
+      <ToyProjectListDy />
       <Bottom />
       <Footer />
     </main>
