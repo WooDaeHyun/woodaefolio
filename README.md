@@ -1,8 +1,9 @@
 # 💡 woodaefolio
 
 ```
-📖 지금까지 참여한 프로젝트와 여러 경험을 중심으로 Portfolio를 구성했습니다. 
+📖 지금까지 참여한 프로젝트와 여러 경험을 중심으로 Portfolio를 구성했습니다.
 ```
+
 <img width="1697" alt="스크린샷 2023-07-19 오후 10 26 03" src="https://github.com/WooDaeHyun/woodaefolio/assets/113018070/5abb64fa-d28a-40fb-8855-16d2416e1069">
 
 ## 1. 배포 주소
@@ -32,15 +33,16 @@
 <br />
 
 ## 3. 폴더 구조
+
 ```javascript
 public
-  L icons 
-  L images 
+  L icons
+  L images
 src
   L app
   L components
       L Intro // 페이지 네비게이션 및 배경 이미지 등 설정
-      L About // 나를 소개하는 부분 
+      L About // 나를 소개하는 부분
       L LinkBanner // 나와 관련된 Link 연결
       L ProjectList // 참여한 프로젝트 소개
       L ProjectDocs // 참여한 프로젝트와 관련된 문서 연결
@@ -49,7 +51,6 @@ src
       L Footer
 data ...
 ```
-
 
 <br />
 
@@ -77,8 +78,10 @@ data ...
 <br/>
 <br/>
 
+## 6. 업데이트
+
+- daisyUI 캐러셀에서 tw-elements의 캐러셀 컴포넌트로 변경 ( 23.08.16 )
+
 ```
 앞으로도 지속적인 업데이트와 PORTFOLIO의 내용을 채워나가기 위해 노력할 예정입니다. 긴 글 읽어주셔서 감사합니다. 🖐️
 ```
-
-
