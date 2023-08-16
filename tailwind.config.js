@@ -4,7 +4,9 @@ module.exports = {
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/ui/**/*.{js,ts,jsx,tsx,mdx}'
+    './src/ui/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/**/*.{js,ts,jsx,tsx,mdx}',
+    './node_modules/tw-elements/dist/js/**/*.js'
   ],
   theme: {
     extend: {
@@ -46,5 +48,6 @@ module.exports = {
       }
     }
   },
-  plugins: [require('daisyui')]
+  plugins: [require('tw-elements/dist/plugin')],
+  darkMode: 'class'
 };
